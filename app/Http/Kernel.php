@@ -39,9 +39,9 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-            // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-            \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
+            'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
         ],
     ];
 
@@ -64,5 +64,26 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'auth' => \App\Http\Middleware\AuthMiddleware::class,
+        'admin' => \App\Http\Middleware\AdminMiddleware::class,
     ];
+
+    protected $commands = [
+        \App\Console\Commands\ExportDataToCSV::class,
+        \App\Console\Commands\DeleteInactiveUsers::class,
+    ];
+    
+
+    /**
+     * Register the Closure based commands for the application.
+     *
+     * @return void
+     */
+    protected function commands()
+    {
+        // Supprime cette ligne, car elle n'est généralement pas nécessaire pour les commandes.
+        // $this->load(__DIR__.'/Commands');
+
+        require base_path('routes/console.php');
+    }
 }

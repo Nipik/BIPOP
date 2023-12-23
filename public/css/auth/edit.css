@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url('/images/rain.jpg');
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff1e;
+    margin: 50px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    background-size: cover;
+}
+
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ffffff; 
+    font-size: 24px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-control {
+    width: 85%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #0000003f; 
+    border-radius: 5px;
+    background-color: #00000053;
+    color: #fff;
+    margin: 10px;
+}
+
+.btn-signin {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px;
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+    left: 150px;
+    background-color:rgba(255, 255, 255, 0); 
+    border-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    left: 120px;
+    border: 2px solid white;
+}
+
+.btn-signin:hover {
+    color: #000000; 
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    border-color: #ffffff;
+}
+
+.btn-signup {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+}
+
+.btn-signup:hover {
+    color: #ffffff; 
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+label{
+    color: #fff;
+}
+input[type="email"],
+input[type="text"],
+input[type="file"]{
+    margin-left: -1px;
+}

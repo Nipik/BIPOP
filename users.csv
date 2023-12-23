@@ -1,0 +1,2 @@
+id,name,email,password,image,role,is_active,last_login,created_at,updated_at
+2,MEEV,meev@gmail.com,$2y$12$RdE8ThRgV1hM2/yYytZsWekm/jppQtuDIVGKciFZClG3hVORNa/iq,profile_images/mRLfi7jqfZLjX5Ty3P86bku5IRd0LmiTcvduuT9h.jpg,user,1,,"2023-12-17 21:25:13","2023-12-17 21:25:13"
