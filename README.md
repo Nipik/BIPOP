@@ -64,6 +64,7 @@ Before getting started, make sure you have the following installed on your machi
 ![img3](https://github.com/Nipik/BIPOP/assets/129624834/b738ae68-ac64-4c16-90a2-0926f249ac96)
 ![img5](https://github.com/Nipik/BIPOP/assets/129624834/0760a812-0473-440f-aef1-c3afbef186ef)
 ![1705188498235](https://github.com/Nipik/BIPOP/assets/129624834/1d3d81c2-b6b8-4f98-b8ac-ab042cdebeb5)
+![2024-01-23 14_57_58-Greenshot](https://github.com/Nipik/BIPOP/assets/129624834/c101e518-4e7a-4d43-a0a7-9b6bac0d3d37)
 
 
 ## Usage
